@@ -119,6 +119,12 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="SkiaSharp">
+      <Version>1.59.3</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Views">
+      <Version>1.59.3</Version>
+    </PackageReference>
     <PackageReference Include="SkiaSharp.Views.Forms">
       <Version>1.59.3</Version>
     </PackageReference>

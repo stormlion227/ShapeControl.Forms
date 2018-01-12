@@ -2,10 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Test"
+             xmlns:shapes="clr-namespace:Stormlion.ShapeControl;assembly=Stromlion.ShapeControl"
+             xmlns:shapesExtension="clr-namespace:Stormlion.ShapeControl.Extensions;assembly=Stromlion.ShapeControl"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:skiabase="clr-namespace:SkiaSharp;assembly=SkiaSharp"
              x:Class="Test.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     x:Name="stack1"
+                     BackgroundColor="Red"
+                     >
+            <shapes:Circle HeightRequest="300"
+                           x:Name="circle1"
+                           >
+                <shapes:Circle.Paint>
+                    <skiabase:SKPaint Style="Fill"
+                                      Color="{shapesExtension:SKColorMarkup LightGreen}"
+                                      />
+                </shapes:Circle.Paint>
+            </shapes:Circle>
+            
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

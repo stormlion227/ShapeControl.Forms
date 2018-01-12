@@ -24,8 +24,6 @@
 	<string>11.2</string>
 	<key>CFBundleDisplayName</key>
 	<string>Test</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Test</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -50,5 +48,7 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>Test</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.stormlion.shapecontroltest</string>
 </dict>
 </plist>

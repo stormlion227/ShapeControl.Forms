@@ -13,14 +13,14 @@
                     >
             <StackLayout Orientation="Vertical"
                          x:Name="stack1"
-                         BackgroundColor="Red"
+                         BackgroundColor="LightBlue"
                          HorizontalOptions="FillAndExpand"
                          >
                 <shapes:Circle HeightRequest="200"
                                >
                     <shapes:Circle.Paint>
                         <skiabase:SKPaint Style="Stroke"
-                                          Color="{shapesExtension:SKColorMarkup LightGreen}"
+                                          Color="{shapesExtension:SKColorMarkup Red}"
                                           StrokeWidth="1"
                                           />
                     </shapes:Circle.Paint>
@@ -34,6 +34,17 @@
                                           />
                     </shapes:Oval.Paint>
                 </shapes:Oval>
+                <shapes:RoundRect HeightRequest="200"
+                                  RadiusX="30"
+                                  RadiusY="30"
+                                  >
+                    <shapes:RoundRect.Paint>
+                        <skiabase:SKPaint Style="Stroke"
+                                          Color="{shapesExtension:SKColorMarkup Blue}"
+                                          StrokeWidth="5"
+                                          />
+                    </shapes:RoundRect.Paint>
+                </shapes:RoundRect>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

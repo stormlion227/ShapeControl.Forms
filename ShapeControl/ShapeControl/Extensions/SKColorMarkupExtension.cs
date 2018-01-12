@@ -9,15 +9,14 @@ using Xamarin.Forms.Xaml;
 
 namespace Stormlion.ShapeControl.Extensions
 {
-    [ContentProperty("ColorString")]
+    [ContentProperty("Value")]
     public class SKColorMarkupExtension : IMarkupExtension<SKColor>
     {
-        public string ColorString { get; set; }
+        public Color Value { get; set; }
 
         public SKColor ProvideValue(IServiceProvider serviceProvider)
         {
-            Color color = (Color)new ColorTypeConverter().ConvertFromInvariantString(ColorString);
-            return new SKColor((byte)(color.R * 255), (byte)(color.G * 255), (byte)(color.B * 255), (byte)(color.A * 255));
+            return new SKColor((byte)(Value.R * 255), (byte)(Value.G * 255), (byte)(Value.B * 255), (byte)(Value.A * 255));
         }
 
         object IMarkupExtension.ProvideValue(IServiceProvider serviceProvider)

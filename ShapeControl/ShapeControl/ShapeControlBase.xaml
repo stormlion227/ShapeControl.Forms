@@ -9,7 +9,7 @@
         <skia:SKCanvasView PaintSurface="OnCanvasViewPaintSurface"
                            HorizontalOptions="FillAndExpand"
                            VerticalOptions="FillAndExpand"
-                           x:Name="skiaView"
+                           x:Name="canvasView"
                            >
         </skia:SKCanvasView>
     </ContentView.Content>

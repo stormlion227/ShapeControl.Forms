@@ -119,10 +119,23 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="SkiaSharp.Views.Forms">
+      <Version>1.59.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\ShapeControl\ShapeControl.iOS\ShapeControl.iOS.csproj">
+      <Project>{e6fcc3f4-47a4-4acf-a054-b6413974ee33}</Project>
+      <Name>ShapeControl.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ShapeControl\ShapeControl\ShapeControl.csproj">
+      <Project>{786b0e27-d4e8-4cca-9ab3-7490b5bd62bd}</Project>
+      <Name>ShapeControl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{42056598-4C5B-46DE-BB9F-BAB33183EDD3}</Project>
       <Name>Test</Name>

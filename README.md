@@ -1,6 +1,6 @@
 # ShapeControl.Forms
 
-<img src="ScreenShots/IMG_1113.JPG" width="45%" height="45%" align="right"/>
+<img src="ScreenShots/IMG_1113.JPG" width="40%" height="40%" align="right"/>
 
 Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.
 

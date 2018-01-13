@@ -32,78 +32,74 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 #### Circle with Solid Stroke
 
 ```
-  <StackLayout Orientation="Vertical"
-               >
-      <shapes:Circle HeightRequest="200"
-                     >
-          <shapes:Circle.Paint>
-              <skiaSharp:SKPaint Style="Stroke"
-                                Color="{shapesExtension:SKColorMarkup Red}"
-                                StrokeWidth="1"
-                                />
-          </shapes:Circle.Paint>
-      </shapes:Circle>
-   </StackLayout>
+    <shapes:Circle WidthRequest="300"
+                   HeightRequest="200"
+                   >
+        <shapes:Circle.Paint>
+            <skiaSharp:SKPaint Style="Stroke"
+                               Color="{shapesExtension:SKColorMarkup Red}"
+                               StrokeWidth="1"
+                               />
+        </shapes:Circle.Paint>
+    </shapes:Circle>
 ```
 
 #### Oval with Blue Solid Color
 
 ```
-  <StackLayout Orientation="Vertical"
-    <shapes:Oval HeightRequest="200"
-                 >
-        <shapes:Oval.Paint>
-            <skiaSharp:SKPaint Style="StrokeAndFill"
-                               Color="{shapesExtension:SKColorMarkup Blue}"
-                               />
-        </shapes:Oval.Paint>
-    </shapes:Oval>
-  </StackLayout>
+  <shapes:Oval WidthRequest="300"
+               HeightRequest="200"
+               >
+      <shapes:Oval.Paint>
+          <skiaSharp:SKPaint Style="StrokeAndFill"
+                             Color="{shapesExtension:SKColorMarkup Blue}"
+                             />
+      </shapes:Oval.Paint>
+  </shapes:Oval>
 ```
 
 #### RoundRect with Gridient Color
 
 ```
-  <StackLayout Orientation="Vertical"
-      <shapes:RoundRect HeightRequest="200"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-          <shapes:RoundRect.Paint>
-              <skiaSharp:SKPaint Style="Fill"
-                                 >
-                  <skiabskiaSharpase:SKPaint.Shader>
-                      <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
-                                          >
-                          <x:Arguments>
-                              <skiaSharp:SKPoint>
-                                  <x:Arguments>
-                                      <x:Single>0</x:Single>
-                                      <x:Single>0</x:Single>
-                                  </x:Arguments>
-                              </skiaSharp:SKPoint>
-                              <skiaSharp:SKPoint>
-                                  <x:Arguments>
-                                      <x:Single>255</x:Single>
-                                      <x:Single>255</x:Single>
-                                  </x:Arguments>
-                              </skiaSharp:SKPoint>
-                              <x:Array Type="{x:Type skiaSharp:SKColor}">
-                                  <shapesExtension:SKColorMarkup Value="Green" />
-                                  <shapesExtension:SKColorMarkup Value="Yellow" />
-                              </x:Array>
-                              <x:Array Type="{x:Type x:Single}">
-                                  <x:Single>0</x:Single>
-                                  <x:Single>1</x:Single>
-                              </x:Array>
-                              <skiaSharp:SKShaderTileMode>
-                                  Clamp
-                              </skiaSharp:SKShaderTileMode>
-                          </x:Arguments>
-                      </skiaSharp:SKShader>
-                  </skiaSharp:SKPaint.Shader>
-              </skiaSharp:SKPaint>
-          </shapes:RoundRect.Paint>
-      </shapes:RoundRect>
-  </StackLayout>
+    <shapes:RoundRect WidthRequest="300"
+                      HeightRequest="200"
+                      RadiusX="30"
+                      RadiusY="30"
+                      >
+        <shapes:RoundRect.Paint>
+            <skiaSharp:SKPaint Style="Fill"
+                               >
+                <skiabskiaSharpase:SKPaint.Shader>
+                    <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
+                                        >
+                        <x:Arguments>
+                            <skiaSharp:SKPoint>
+                                <x:Arguments>
+                                    <x:Single>0</x:Single>
+                                    <x:Single>0</x:Single>
+                                </x:Arguments>
+                            </skiaSharp:SKPoint>
+                            <skiaSharp:SKPoint>
+                                <x:Arguments>
+                                    <x:Single>255</x:Single>
+                                    <x:Single>255</x:Single>
+                                </x:Arguments>
+                            </skiaSharp:SKPoint>
+                            <x:Array Type="{x:Type skiaSharp:SKColor}">
+                                <shapesExtension:SKColorMarkup Value="Green" />
+                                <shapesExtension:SKColorMarkup Value="Yellow" />
+                            </x:Array>
+                            <x:Array Type="{x:Type x:Single}">
+                                <x:Single>0</x:Single>
+                                <x:Single>1</x:Single>
+                            </x:Array>
+                            <skiaSharp:SKShaderTileMode>
+                                Clamp
+                            </skiaSharp:SKShaderTileMode>
+                        </x:Arguments>
+                    </skiaSharp:SKShader>
+                </skiaSharp:SKPaint.Shader>
+            </skiaSharp:SKPaint>
+        </shapes:RoundRect.Paint>
+    </shapes:RoundRect>
 ```

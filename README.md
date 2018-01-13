@@ -1,6 +1,6 @@
 # ShapeControl.Forms
 
-<img src="ScreenShots/IMG_1113.JPG" width="40%" height="40%" align="right"/>
+<img src="ScreenShots/IMG_1113.JPG" width="45%" height="45%" align="right"/>
 
 Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.
 
@@ -53,8 +53,8 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
                  >
         <shapes:Oval.Paint>
             <skiaSharp:SKPaint Style="StrokeAndFill"
-                              Color="{shapesExtension:SKColorMarkup Blue}"
-                              />
+                               Color="{shapesExtension:SKColorMarkup Blue}"
+                               />
         </shapes:Oval.Paint>
     </shapes:Oval>
   </StackLayout>
@@ -70,11 +70,10 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
                         >
           <shapes:RoundRect.Paint>
               <skiaSharp:SKPaint Style="Fill"
-                                >
+                                 >
                   <skiabskiaSharpase:SKPaint.Shader>
                       <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
-                                         x:Name="shader1"
-                                         >
+                                          >
                           <x:Arguments>
                               <skiaSharp:SKPoint>
                                   <x:Arguments>

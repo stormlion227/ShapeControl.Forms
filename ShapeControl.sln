@@ -7,13 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Android", "Test\Test.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.iOS", "Test\Test.iOS\Test.iOS.csproj", "{A64B6258-4522-4137-81BE-998ADCA371DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test\Test.csproj", "{AB298E8D-C880-40B7-B2EB-779E10ED643D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test\Test.csproj", "{AB298E8D-C880-40B7-B2EB-779E10ED643D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeControl", "ShapeControl\ShapeControl\ShapeControl.csproj", "{786B0E27-D4E8-4CCA-9AB3-7490B5BD62BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeControl", "ShapeControl\ShapeControl\ShapeControl.csproj", "{786B0E27-D4E8-4CCA-9AB3-7490B5BD62BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeControl.Android", "ShapeControl\ShapeControl.Android\ShapeControl.Android.csproj", "{9047752B-0F76-4794-B25C-5FB3D2FEBF23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeControl.iOS", "ShapeControl\ShapeControl.iOS\ShapeControl.iOS.csproj", "{E6FCC3F4-47A4-4ACF-A054-B6413974EE33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{072F1444-A6D2-4B55-99DF-275B5CF79E74}"
+	ProjectSection(SolutionItems) = preProject
+		ShapeControl.nuspec = ShapeControl.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

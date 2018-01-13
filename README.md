@@ -102,4 +102,4 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP)
 
 #### ScrenShot
 
-<img src="ScreenShots/IMG_1112.png" />
+<img src="ScreenShots/IMG_1112.PNG" />

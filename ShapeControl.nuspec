@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>ShapeControl.Forms</id>
-    <version>0.1.1</version>
+    <version>0.1.3</version>
     <authors>Marko Rothstein</authors>
     <owners>Marko Rothstein</owners>
-    <iconUrl>https://github.com/stormlion227/ShapeControl.Forms/blob/master/ShapeControl.ico</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/stormlion227/ShapeControl.Forms/master/ShapeControl.ico</iconUrl>
     <projectUrl>https://github.com/stormlion227/ShapeControl.Forms</projectUrl>
-    <licenseUrl>https://opensource.org/licenses/GPL-3.0</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/stormlion227/ShapeControl.Forms/blob/master/LICENSE.md</licenseUrl>
+      <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.</description>
     <summary>Supports Android, iOS and Unified Windows Platform (UWP, UAP). This is based on SkiaSharp</summary>
     <releaseNotes>First release.</releaseNotes>

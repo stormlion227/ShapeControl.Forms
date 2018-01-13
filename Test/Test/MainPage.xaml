@@ -11,11 +11,9 @@
         <ScrollView HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand"
                     >
-            <StackLayout Orientation="Vertical"
-                         x:Name="stack1"
-                         BackgroundColor="LightBlue"
-                         HorizontalOptions="FillAndExpand"
-                         >
+            <Grid HorizontalOptions="FillAndExpand"
+                  
+                  >
                 <shapes:Circle HeightRequest="200"
                                >
                     <shapes:Circle.Paint>
@@ -76,7 +74,7 @@
                         </skiabase:SKPaint>
                     </shapes:RoundRect.Paint>
                 </shapes:RoundRect>
-            </StackLayout>
+            </Grid>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

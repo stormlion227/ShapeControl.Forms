@@ -18,6 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{072F1444-A6D2-4B55-99DF-275B5CF79E74}"
 	ProjectSection(SolutionItems) = preProject
 		ScreenShots\IMG_1112.PNG = ScreenShots\IMG_1112.PNG
+		LICENSE.md = LICENSE.md
 		README.md = README.md
 		ShapeControl.ico = ShapeControl.ico
 		ShapeControl.nuspec = ShapeControl.nuspec

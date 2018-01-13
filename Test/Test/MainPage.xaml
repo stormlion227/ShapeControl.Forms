@@ -29,8 +29,8 @@
                              >
                     <shapes:Oval.Paint>
                         <skiabase:SKPaint Style="StrokeAndFill"
-                                          Color="{shapesExtension:SKColorMarkup Gray}"
                                           StrokeWidth="10"
+                                          Color="{shapesExtension:SKColorMarkup Blue}"
                                           />
                     </shapes:Oval.Paint>
                 </shapes:Oval>
@@ -39,10 +39,41 @@
                                   RadiusY="30"
                                   >
                     <shapes:RoundRect.Paint>
-                        <skiabase:SKPaint Style="Stroke"
-                                          Color="{shapesExtension:SKColorMarkup Blue}"
+                        <skiabase:SKPaint Style="StrokeAndFill"
                                           StrokeWidth="5"
-                                          />
+                                          >
+                            <skiabase:SKPaint.Shader>
+                                <skiabase:SKShader x:FactoryMethod="CreateLinearGradient"
+                                                   x:Name="shader1"
+                                                   >
+                                    <x:Arguments>
+                                        <skiabase:SKPoint>
+                                            <x:Arguments>
+                                                <x:Single>0</x:Single>
+                                                <x:Single>0</x:Single>
+                                            </x:Arguments>
+                                        </skiabase:SKPoint>
+                                        <skiabase:SKPoint>
+                                            <x:Arguments>
+                                                <x:Single>255</x:Single>
+                                                <x:Single>255</x:Single>
+                                            </x:Arguments>
+                                        </skiabase:SKPoint>
+                                        <x:Array Type="{x:Type skiabase:SKColor}">
+                                            <shapesExtension:SKColorMarkup Value="Green" />
+                                            <shapesExtension:SKColorMarkup Value="Yellow" />
+                                        </x:Array>
+                                        <x:Array Type="{x:Type x:Single}">
+                                            <x:Single>0</x:Single>
+                                            <x:Single>1</x:Single>
+                                        </x:Array>
+                                        <skiabase:SKShaderTileMode>
+                                            Clamp
+                                        </skiabase:SKShaderTileMode>
+                                    </x:Arguments>
+                                </skiabase:SKShader>
+                            </skiabase:SKPaint.Shader>
+                        </skiabase:SKPaint>
                     </shapes:RoundRect.Paint>
                 </shapes:RoundRect>
             </StackLayout>

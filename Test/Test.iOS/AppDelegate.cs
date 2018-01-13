@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using SkiaSharp;
 using Stormlion.ShapeControl.Extensions;
 using UIKit;
 
@@ -23,8 +24,6 @@ namespace Test.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            var i1 = new SKColorMarkupExtension();
-
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

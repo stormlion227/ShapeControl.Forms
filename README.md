@@ -8,28 +8,30 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP).
 
 This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms).
 
-### Features
+[![NuGet](https://img.shields.io/nuget/v/ShapeControl.Forms.svg)](https://www.nuget.org/packages/ShapeControl.Forms/)
+
+## Features
 
 * Circle
 * Oval
 * RoundedRect
 * Effects by using [SkiaSharp library](https://www.nuget.org/packages/SkiaSharp.Views.Forms).
 
-### Support Platforms
+## Support Platforms
 
 * iOS 8+
 * Android
 * Universal Windows Platform (Win10/UWP)
 
-### Usage
+## Usage
 
-#### Setup
+### Setup
 
 * Install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in each of your platforms.
 * Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in only Portable project.
 * Please refer [test XAML](Test/Test/MainPage.xaml)
 
-#### Circle with Solid Stroke
+### Circle with Solid Stroke
 
 ```
     <shapes:Circle WidthRequest="300"
@@ -44,7 +46,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
     </shapes:Circle>
 ```
 
-#### Oval with Blue Solid Color
+### Oval with Blue Solid Color
 
 ```
   <shapes:Oval WidthRequest="300"
@@ -58,7 +60,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
   </shapes:Oval>
 ```
 
-#### RoundRect with Gridient Color
+### RoundRect with Gridient Color
 
 ```
     <shapes:RoundRect WidthRequest="300"
@@ -103,3 +105,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
         </shapes:RoundRect.Paint>
     </shapes:RoundRect>
 ```
+
+## Contributors
+
+* **[Marko Rothstein](https://www.facebook.com/profile.php?id=100014026622428)**

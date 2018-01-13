@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeControl.iOS", "ShapeCo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{072F1444-A6D2-4B55-99DF-275B5CF79E74}"
 	ProjectSection(SolutionItems) = preProject
+		ScreenShots\IMG_1112.PNG = ScreenShots\IMG_1112.PNG
+		README.md = README.md
 		ShapeControl.nuspec = ShapeControl.nuspec
 	EndProjectSection
 EndProject

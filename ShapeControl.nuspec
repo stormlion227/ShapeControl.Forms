@@ -13,7 +13,7 @@
     <summary>Supports Android, iOS and Unified Windows Platform (UWP, UAP). This is based on SkiaSharp</summary>
     <releaseNotes>First release.</releaseNotes>
     <copyright>© StormLion 2018</copyright>
-    <tags>Xamarin Forms Shape Circle RoundRect Oval</tags>
+    <tags>xamarin forms shape circle roundrect oval gradient border border-radius effects border-color corner-radius</tags>
     <dependencies>
       <group>
         <dependency id="SkiaSharp.Views.Forms" version="1.59.3"/>

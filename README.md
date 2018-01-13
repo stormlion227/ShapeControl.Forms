@@ -18,7 +18,7 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP)
 
 ### Usage
 
-##### Circle with Stroke
+##### Circle with Red Stroke
 
 ```
   <StackLayout Orientation="Vertical"
@@ -35,7 +35,7 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP)
    </StackLayout>
 ```
 
-##### Oval with Fill Color
+##### Oval with Blue Fill Color
 
 ```
   <StackLayout Orientation="Vertical"

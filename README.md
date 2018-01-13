@@ -17,6 +17,10 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 * Android
 * Universal Windows Platform (Win10/UWP)
 
+### ScrenShot
+
+<img src="ScreenShots/IMG_1113.PNG" />
+
 ### Usage
 
 #### Setup
@@ -24,7 +28,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 * Install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in each of your platforms.
 * Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in only Portable project.
 
-#### Circle with Red Stroke
+#### Circle with Solid Stroke
 
 ```
   <StackLayout Orientation="Vertical"
@@ -41,7 +45,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
    </StackLayout>
 ```
 
-#### Oval with Blue Fill Color
+#### Oval with Blue Solid Color
 
 ```
   <StackLayout Orientation="Vertical"
@@ -49,7 +53,6 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
                  >
         <shapes:Oval.Paint>
             <skiaSharp:SKPaint Style="StrokeAndFill"
-                              StrokeWidth="10"
                               Color="{shapesExtension:SKColorMarkup Blue}"
                               />
         </shapes:Oval.Paint>
@@ -66,8 +69,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
                         RadiusY="30"
                         >
           <shapes:RoundRect.Paint>
-              <skiaSharp:SKPaint Style="StrokeAndFill"
-                                StrokeWidth="5"
+              <skiaSharp:SKPaint Style="Fill"
                                 >
                   <skiabskiaSharpase:SKPaint.Shader>
                       <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
@@ -105,7 +107,3 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
       </shapes:RoundRect>
   </StackLayout>
 ```
-
-#### ScrenShot
-
-<img src="ScreenShots/IMG_1112.PNG" />

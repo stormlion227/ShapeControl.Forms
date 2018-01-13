@@ -1,6 +1,6 @@
 # ShapeControl.Forms
 
-<img src="ScreenShots/IMG_1113.JPG" width="40%" height="40%" align="right"/>
+<img src="ScreenShots/IMG_1113.JPG" width="45%" height="45%" align="right"/>
 
 Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.
 
@@ -27,6 +27,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 
 * Install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in each of your platforms.
 * Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in only Portable project.
+* Please refer [test XAML](Test/Test/MainPage.xaml)
 
 #### Circle with Solid Stroke
 

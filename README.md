@@ -19,7 +19,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 
 ### ScrenShot
 
-<img src="ScreenShots/IMG_1113.PNG?raw=true" />
+<img src="ScreenShots/IMG_1113.JPG" width="50%" height="50%" />
 
 ### Usage
 

@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>ShapeControl.Forms</id>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
     <authors>Marko Rothstein</authors>
     <owners>Marko Rothstein</owners>
     <iconUrl>https://raw.githubusercontent.com/stormlion227/ShapeControl.Forms/master/ShapeControl.ico</iconUrl>
     <projectUrl>https://github.com/stormlion227/ShapeControl.Forms</projectUrl>
     <licenseUrl>https://github.com/stormlion227/ShapeControl.Forms/blob/master/LICENSE.md</licenseUrl>
-      <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.</description>
     <summary>Supports Android, iOS and Unified Windows Platform (UWP, UAP). This is based on SkiaSharp</summary>
     <releaseNotes>First release.</releaseNotes>
@@ -16,24 +16,7 @@
     <tags>Xamarin Forms Shape Circle RoundRect Oval</tags>
     <dependencies>
       <group>
-        <dependency id="Xamarin.Forms" version="2.4.0" />
-        <dependency id="SkiaSharp" version="1.59.3" />
         <dependency id="SkiaSharp.Views.Forms" version="1.59.3"/>
-      </group>
-      <group targetFramework="netstandard2.0">
-        <dependency id="NETStandard.Library" version="2.0.1" />
-      </group>
-      <group targetFramework="MonoAndroid">
-        <dependency id="SkiaSharp.Views" version="1.59.3" />
-      </group>
-      <group targetFramework="XamariniOS">
-        <dependency id="SkiaSharp.Views" version="1.59.3" />
-      </group>
-      <group targetFramework="XamarinMac">
-        <dependency id="SkiaSharp.Views" version="1.59.3" />
-      </group>
-      <group targetFramework="uap10.0">
-        <dependency id="SkiaSharp.Views" version="1.59.3" />
       </group>
     </dependencies>
   </metadata>

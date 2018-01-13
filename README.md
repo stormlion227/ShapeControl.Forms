@@ -1,14 +1,15 @@
 # ShapeControl.Forms
 
-Xamarin.Forms library that allows you to draw shapes from a shared/portable library.
+Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.
 Supports Android, iOS and Unified Windows Platform (UWP, UAP)
+This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms)
 
 ### Features
 
 * Circle
 * Oval
 * RoundedRect
-* Color Effect by using [SkiaSharp library](https://github.com/mono/SkiaSharp).
+* Color Effect by using [SkiaSharp library](https://www.nuget.org/packages/SkiaSharp.Views.Forms).
 
 ### Support Platforms
 
@@ -18,7 +19,12 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP)
 
 ### Usage
 
-##### Circle with Red Stroke
+#### Setup
+
+* Install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in each of your platforms.
+* Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in only Portable project.
+
+#### Circle with Red Stroke
 
 ```
   <StackLayout Orientation="Vertical"
@@ -26,7 +32,7 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP)
       <shapes:Circle HeightRequest="200"
                      >
           <shapes:Circle.Paint>
-              <skiabase:SKPaint Style="Stroke"
+              <skiaSharp:SKPaint Style="Stroke"
                                 Color="{shapesExtension:SKColorMarkup Red}"
                                 StrokeWidth="1"
                                 />
@@ -35,14 +41,14 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP)
    </StackLayout>
 ```
 
-##### Oval with Blue Fill Color
+#### Oval with Blue Fill Color
 
 ```
   <StackLayout Orientation="Vertical"
     <shapes:Oval HeightRequest="200"
                  >
         <shapes:Oval.Paint>
-            <skiabase:SKPaint Style="StrokeAndFill"
+            <skiaSharp:SKPaint Style="StrokeAndFill"
                               StrokeWidth="10"
                               Color="{shapesExtension:SKColorMarkup Blue}"
                               />
@@ -60,27 +66,27 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP)
                         RadiusY="30"
                         >
           <shapes:RoundRect.Paint>
-              <skiabase:SKPaint Style="StrokeAndFill"
+              <skiaSharp:SKPaint Style="StrokeAndFill"
                                 StrokeWidth="5"
                                 >
-                  <skiabase:SKPaint.Shader>
-                      <skiabase:SKShader x:FactoryMethod="CreateLinearGradient"
+                  <skiabskiaSharpase:SKPaint.Shader>
+                      <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
                                          x:Name="shader1"
                                          >
                           <x:Arguments>
-                              <skiabase:SKPoint>
+                              <skiaSharp:SKPoint>
                                   <x:Arguments>
                                       <x:Single>0</x:Single>
                                       <x:Single>0</x:Single>
                                   </x:Arguments>
-                              </skiabase:SKPoint>
-                              <skiabase:SKPoint>
+                              </skiaSharp:SKPoint>
+                              <skiaSharp:SKPoint>
                                   <x:Arguments>
                                       <x:Single>255</x:Single>
                                       <x:Single>255</x:Single>
                                   </x:Arguments>
-                              </skiabase:SKPoint>
-                              <x:Array Type="{x:Type skiabase:SKColor}">
+                              </skiaSharp:SKPoint>
+                              <x:Array Type="{x:Type skiaSharp:SKColor}">
                                   <shapesExtension:SKColorMarkup Value="Green" />
                                   <shapesExtension:SKColorMarkup Value="Yellow" />
                               </x:Array>
@@ -88,13 +94,13 @@ Supports Android, iOS and Unified Windows Platform (UWP, UAP)
                                   <x:Single>0</x:Single>
                                   <x:Single>1</x:Single>
                               </x:Array>
-                              <skiabase:SKShaderTileMode>
+                              <skiaSharp:SKShaderTileMode>
                                   Clamp
-                              </skiabase:SKShaderTileMode>
+                              </skiaSharp:SKShaderTileMode>
                           </x:Arguments>
-                      </skiabase:SKShader>
-                  </skiabase:SKPaint.Shader>
-              </skiabase:SKPaint>
+                      </skiaSharp:SKShader>
+                  </skiaSharp:SKPaint.Shader>
+              </skiaSharp:SKPaint>
           </shapes:RoundRect.Paint>
       </shapes:RoundRect>
   </StackLayout>

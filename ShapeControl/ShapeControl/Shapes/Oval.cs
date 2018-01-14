@@ -21,13 +21,15 @@ namespace Stormlion.ShapeControl
             int xRadius = (int)(CanvasView.Width / 2);
             int yRadius = (int)(CanvasView.Height / 2);
 
-            if (Paint.Style != SKPaintStyle.Fill)
-            {
-                xRadius -= (int)(Paint.StrokeWidth / 2);
-                yRadius -= (int)(Paint.StrokeWidth / 2);
-            }
+            canvas.DrawOval((int)CanvasView.Width / 2, (int)CanvasView.Height / 2, xRadius, yRadius, Paint.FillPaint);
 
-            canvas.DrawOval((int)CanvasView.Width / 2, (int)CanvasView.Height / 2, xRadius, yRadius, Paint);
+            if (Paint.BorderPaint != null)
+            {
+                canvas.DrawOval((int)CanvasView.Width / 2, (int)CanvasView.Height / 2,
+                    xRadius - Paint.BorderWidth / 2, 
+                    yRadius - Paint.BorderWidth / 2,
+                    Paint.BorderPaint);
+            }
         }
     }
 }

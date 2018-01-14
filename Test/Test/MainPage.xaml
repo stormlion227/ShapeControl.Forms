@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Test"
              xmlns:shapes="clr-namespace:Stormlion.ShapeControl;assembly=Stromlion.ShapeControl"
-             xmlns:shapesExtension="clr-namespace:Stormlion.ShapeControl.Extensions;assembly=Stromlion.ShapeControl"
              xmlns:skiaSharp="clr-namespace:SkiaSharp;assembly=SkiaSharp"
              x:Class="Test.MainPage">
     <ContentPage.Content>
@@ -27,10 +26,10 @@
                                HeightRequest="200"
                                >
                     <shapes:Circle.Paint>
-                        <skiaSharp:SKPaint Style="Stroke"
-                                           Color="{shapesExtension:SKColorMarkup Red}"
-                                           StrokeWidth="1"
-                                           />
+                        <shapes:SSPaint BorderWidth="1" 
+                                        BorderColor="Red"
+                                        FillColor="Yellow"
+                                        />
                     </shapes:Circle.Paint>
                 </shapes:Circle>
                 <shapes:Oval Grid.Column="1"
@@ -38,9 +37,8 @@
                              HeightRequest="200"
                              >
                     <shapes:Oval.Paint>
-                        <skiaSharp:SKPaint Style="StrokeAndFill"
-                                           Color="{shapesExtension:SKColorMarkup Blue}"
-                                           />
+                        <shapes:SSPaint FillColor="Blue"
+                                        />
                     </shapes:Oval.Paint>
                 </shapes:Oval>
                 <shapes:RoundRect Grid.Column="0"
@@ -50,10 +48,10 @@
                                   RadiusY="30"
                                   >
                     <shapes:RoundRect.Paint>
-                        <skiaSharp:SKPaint Style="Stroke"
-                                           StrokeWidth="10"
-                                           >
-                            <skiaSharp:SKPaint.Shader>
+                        <shapes:SSPaint BorderWidth="10"
+                                        FillColor="Transparent"
+                                        >
+                            <shapes:SSPaint.BorderShader>
                                 <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
                                                     >
                                     <x:Arguments>
@@ -70,8 +68,8 @@
                                             </x:Arguments>
                                         </skiaSharp:SKPoint>
                                         <x:Array Type="{x:Type skiaSharp:SKColor}">
-                                            <shapesExtension:SKColorMarkup Value="Blue" />
-                                            <shapesExtension:SKColorMarkup Value="Red" />
+                                            <shapes:SKColorMarkup Value="Blue" />
+                                            <shapes:SKColorMarkup Value="Red" />
                                         </x:Array>
                                         <x:Array Type="{x:Type x:Single}">
                                             <x:Single>0</x:Single>
@@ -81,9 +79,9 @@
                                             Clamp
                                         </skiaSharp:SKShaderTileMode>
                                     </x:Arguments>
-                                </skiaSharp:SKShader>
-                            </skiaSharp:SKPaint.Shader>
-                        </skiaSharp:SKPaint>
+                                </skiaSharp:SKShader>                                
+                            </shapes:SSPaint.BorderShader>
+                        </shapes:SSPaint>
                     </shapes:RoundRect.Paint>
                 </shapes:RoundRect>
                 <shapes:Oval Grid.Column="1"
@@ -91,10 +89,10 @@
                              HeightRequest="150"
                              >
                     <shapes:Oval.Paint>
-                        <skiaSharp:SKPaint Style="Stroke"
-                                           StrokeWidth="10"
-                                           >
-                            <skiaSharp:SKPaint.PathEffect>
+                        <shapes:SSPaint BorderWidth="10"
+                                        FillColor="Transparent"
+                                        >
+                            <shapes:SSPaint.PathEffect>
                                 <skiaSharp:SKPathEffect x:FactoryMethod="CreateDash"
                                                         >
                                     <x:Arguments>
@@ -105,8 +103,8 @@
                                         <x:Single>30</x:Single>
                                     </x:Arguments>
                                 </skiaSharp:SKPathEffect>
-                            </skiaSharp:SKPaint.PathEffect>
-                            <skiaSharp:SKPaint.Shader>
+                            </shapes:SSPaint.PathEffect>
+                            <shapes:SSPaint.BorderShader>
                                 <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
                                                     >
                                     <x:Arguments>
@@ -123,8 +121,8 @@
                                             </x:Arguments>
                                         </skiaSharp:SKPoint>
                                         <x:Array Type="{x:Type skiaSharp:SKColor}">
-                                            <shapesExtension:SKColorMarkup Value="Brown" />
-                                            <shapesExtension:SKColorMarkup Value="Transparent" />
+                                            <shapes:SKColorMarkup Value="Brown" />
+                                            <shapes:SKColorMarkup Value="Transparent" />
                                         </x:Array>
                                         <x:Array Type="{x:Type x:Single}">
                                             <x:Single>0</x:Single>
@@ -135,8 +133,8 @@
                                         </skiaSharp:SKShaderTileMode>
                                     </x:Arguments>
                                 </skiaSharp:SKShader>
-                            </skiaSharp:SKPaint.Shader>
-                        </skiaSharp:SKPaint>
+                            </shapes:SSPaint.BorderShader>
+                        </shapes:SSPaint>
                     </shapes:Oval.Paint>
                 </shapes:Oval>
                 <shapes:RoundRect Grid.Column="0"
@@ -147,10 +145,10 @@
                                   RadiusY="0"
                                   >
                     <shapes:RoundRect.Paint>
-                        <skiaSharp:SKPaint Style="StrokeAndFill"
-                                           StrokeWidth="5"
-                                           >
-                            <skiaSharp:SKPaint.Shader>
+                        <shapes:SSPaint BorderWidth="1"
+                                        BorderColor="Black"
+                                        >
+                            <shapes:SSPaint.FillShader>
                                 <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
                                                     >
                                     <x:Arguments>
@@ -167,10 +165,10 @@
                                             </x:Arguments>
                                         </skiaSharp:SKPoint>
                                         <x:Array Type="{x:Type skiaSharp:SKColor}">
-                                            <shapesExtension:SKColorMarkup Value="Green" />
-                                            <shapesExtension:SKColorMarkup Value="LightPink" />
-                                            <shapesExtension:SKColorMarkup Value="Yellow" />
-                                            <shapesExtension:SKColorMarkup Value="Transparent" />
+                                            <shapes:SKColorMarkup Value="Green" />
+                                            <shapes:SKColorMarkup Value="LightPink" />
+                                            <shapes:SKColorMarkup Value="Yellow" />
+                                            <shapes:SKColorMarkup Value="Transparent" />
                                         </x:Array>
                                         <x:Array Type="{x:Type x:Single}">
                                             <x:Single>0</x:Single>
@@ -183,8 +181,8 @@
                                         </skiaSharp:SKShaderTileMode>
                                     </x:Arguments>
                                 </skiaSharp:SKShader>
-                            </skiaSharp:SKPaint.Shader>
-                        </skiaSharp:SKPaint>
+                            </shapes:SSPaint.FillShader>
+                        </shapes:SSPaint>
                     </shapes:RoundRect.Paint>
                 </shapes:RoundRect>
                 <shapes:RoundRect Grid.Column="0"
@@ -198,26 +196,10 @@
                                   VerticalOptions="Center"
                                   >
                     <shapes:RoundRect.Paint>
-                        <skiaSharp:SKPaint Style="Fill"
-                                           Color="{shapesExtension:SKColorMarkup #7F000000}"
-                                           />
-                    </shapes:RoundRect.Paint>
-                </shapes:RoundRect>
-                <shapes:RoundRect Grid.Column="0"
-                                  Grid.Row="2"
-                                  Grid.ColumnSpan="2"
-                                  HeightRequest="50"
-                                  WidthRequest="200"
-                                  RadiusX="25"
-                                  RadiusY="25"
-                                  HorizontalOptions="Center"
-                                  VerticalOptions="Center"
-                                  >
-                    <shapes:RoundRect.Paint>
-                        <skiaSharp:SKPaint Style="Stroke"
-                                           Color="{shapesExtension:SKColorMarkup White}"
-                                           StrokeWidth="2"
-                                           />
+                        <shapes:SSPaint BorderWidth="2"
+                                        BorderColor="White"
+                                        FillColor="#7F000000"
+                                        />
                     </shapes:RoundRect.Paint>
                 </shapes:RoundRect>
                 <Label Grid.Column="0"

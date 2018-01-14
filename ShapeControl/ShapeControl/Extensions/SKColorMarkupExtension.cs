@@ -7,7 +7,7 @@ using System.Xml;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Stormlion.ShapeControl.Extensions
+namespace Stormlion.ShapeControl
 {
     [ContentProperty("Value")]
     public class SKColorMarkupExtension : IMarkupExtension<SKColor>

@@ -17,14 +17,18 @@ namespace Stormlion.ShapeControl
 
             canvas.Clear();
 
-            int radius = (int)Math.Min(CanvasView.Width / 2, CanvasView.Height / 2);
+            float radius = Math.Min((float)CanvasView.Width / 2, (float)CanvasView.Height / 2);
 
-            if (Paint.Style != SKPaintStyle.Fill)
+            canvas.DrawCircle((int)CanvasView.Width / 2, (int)CanvasView.Height / 2, radius, Paint.FillPaint);
+
+            if (Paint.BorderPaint != null)
             {
-                radius -= (int)(Paint.StrokeWidth / 2);
+                canvas.DrawCircle(
+                    (float)CanvasView.Width / 2,
+                    (float)CanvasView.Height / 2,
+                    radius - Paint.BorderWidth / 2,
+                    Paint.BorderPaint);
             }
-
-            canvas.DrawCircle((int)CanvasView.Width / 2, (int)CanvasView.Height / 2, radius, Paint);
         }
     }
 }

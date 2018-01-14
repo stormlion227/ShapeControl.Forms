@@ -14,17 +14,12 @@ namespace Stormlion.ShapeControl
 			InitializeComponent ();
 		}
 
-        public SKPaint Paint { get => (SKPaint)GetValue(PaintProperty); set => SetValue(PaintProperty, value);}
+        public SSPaint Paint { get => (SSPaint)GetValue(PaintProperty); set => SetValue(PaintProperty, value);}
 
         public SKCanvasView CanvasView => canvasView;
 
         public static readonly BindableProperty PaintProperty = BindableProperty.Create(
-            nameof(Paint), typeof(SKPaint), typeof(ShapeControlBase), new SKPaint
-            {
-                Style = SKPaintStyle.Stroke,
-                Color = Color.Black.ToSKColor(),
-                StrokeWidth = 1
-            },
+            nameof(Paint), typeof(SSPaint), typeof(ShapeControlBase), new SSPaint(),
             propertyChanged: (b, n, o) => {
                 (b as ShapeControlBase).canvasView.InvalidateSurface();
             }

@@ -43,8 +43,19 @@ namespace Stormlion.ShapeControl
 
             canvas.Clear();
 
-            float delta = Paint.Style == SKPaintStyle.Fill ? 0 : Paint.StrokeWidth / 2;
-            canvas.DrawRoundRect(SKRect.Create(delta, delta, (float)CanvasView.Width - 2 * delta, (float)CanvasView.Height - 2 * delta), (float)RadiusX, (float)RadiusY, Paint);
+            canvas.DrawRoundRect(SKRect.Create(0, 0, (float)CanvasView.Width, (float)CanvasView.Height - 2), (float)RadiusX, (float)RadiusY, Paint.FillPaint);
+
+            if (Paint.BorderPaint != null)
+            {
+                canvas.DrawRoundRect(SKRect.Create(
+                    Paint.BorderWidth / 2,
+                    Paint.BorderWidth / 2,
+                    (float)CanvasView.Width - Paint.BorderWidth,
+                    (float)CanvasView.Height - Paint.BorderWidth),
+                    (float)RadiusX,
+                    (float)RadiusY,
+                    Paint.BorderPaint);
+            }
         }
     }
 }

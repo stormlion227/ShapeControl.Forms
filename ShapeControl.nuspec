@@ -2,18 +2,18 @@
 <package >
   <metadata>
     <id>ShapeControl.Forms</id>
-    <version>0.1.5.2</version>
+    <version>0.1.6-beta2</version>
     <authors>Marko Rothstein</authors>
     <owners>Marko Rothstein</owners>
     <iconUrl>https://raw.githubusercontent.com/stormlion227/ShapeControl.Forms/master/ShapeControl.ico</iconUrl>
     <projectUrl>https://github.com/stormlion227/ShapeControl.Forms</projectUrl>
     <licenseUrl>https://github.com/stormlion227/ShapeControl.Forms/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.</description>
-    <summary>Supports Android, iOS and Unified Windows Platform (UWP, UAP). This is based on SkiaSharp</summary>
+    <description>Xamarin.Forms(.Net Standard) library that allows you make beautiful UIs with borderless entry, circle, rounded rect, oval and so on.</description>
+    <summary>Supports Android, iOS and Unified Windows Platform (UWP, UAP).</summary>
     <releaseNotes>First release.</releaseNotes>
     <copyright>© StormLion 2018</copyright>
-    <tags>xamarin forms shape circle roundrect oval gradient border border-radius effects border-color corner-radius</tags>
+    <tags>xamarin forms shape circle roundrect oval gradient border border-radius effects border-color corner-radius borderless entry</tags>
     <dependencies>
       <group>
         <dependency id="SkiaSharp.Views.Forms" version="1.59.3"/>
@@ -21,7 +21,9 @@
     </dependencies>
   </metadata>
   <files>
-    <!-- Cross-platform reference assemblies -->
     <file src="ShapeControl/ShapeControl/bin/Release/netstandard2.0/Stromlion.ShapeControl.dll" target="lib/netstandard2.0" />
+    <file src="ShapeControl/ShapeControl.Android/bin/Release/Stormlion.ShapeControl.Android.dll" target="lib/MonoAndroid403" />
+    <file src="ShapeControl/ShapeControl.iOS/bin/Release/Stormlion.ShapeControl.iOS.dll" target="lib/Xamarin.iOS10" />
+    <file src="ShapeControl/ShapeControl.UWP/bin/Release/Stormlion.ShapeControl.UWP.dll" target="lib/UAP10" />
   </files>
 </package>

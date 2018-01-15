@@ -20,6 +20,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <shapes:Circle Grid.Column="0"
                                Grid.Row="0"
@@ -215,6 +216,10 @@
                        TextColor="White"
                        FontSize="Large"
                        />
+                <shapes:SSEntry Grid.Row="3"
+                                Grid.Column="0"
+                                Text="No Border Entry"
+                                />
             </Grid>
         </ScrollView>
     </ContentPage.Content>

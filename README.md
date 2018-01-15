@@ -1,6 +1,6 @@
 # ShapeControl.Forms
 
-<img src="ScreenShots/IMG_1115.JPG" width="50%" height="50%" align="right"/>
+<img src="ScreenShots/IMG_E1116.JPG" width="50%" height="50%" align="right"/>
 
 Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.
 
@@ -15,6 +15,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 * Circle
 * Oval
 * RoundedRect
+* Borderless Entry (SSEntry). This can be decorated this with other shape controls.
 * Effects by using [SkiaSharp library](https://www.nuget.org/packages/SkiaSharp.Views.Forms).
 
 ## Support Platforms
@@ -25,11 +26,43 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 
 ## Usage
 
-### Setup
+Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in only Portable project.
 
-* Install [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms) in each of your platforms.
-* Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in only Portable project.
-* Please refer [test XAML](Test/Test/MainPage.xaml)
+### Important
+
+You must add these lines to your platform specific projects before Xamain.Forms.Forms.Init() call.
+
+#### Android
+
+In MainActivity.cs file
+
+'''
+	ShapeControl.Init(this);
+
+	global::Xamarin.Forms.Forms.Init(this, bundle);
+'''
+
+#### iOS
+
+In AppDelegate.cs file
+
+'''
+	ShapeControl.Init();
+
+	global::Xamarin.Forms.Forms.Init();
+'''
+
+#### UWP
+
+In App.xaml.cs file
+
+```
+    List<Assembly> assebliesToInclude = new List<Assembly>();
+
+    assebliesToInclude.Add(typeof(ShapeControl).GetTypeInfo().Assembly);
+
+    Xamarin.Forms.Forms.Init(e, assebliesToInclude);
+```
 
 ### Circle Example
 
@@ -98,6 +131,12 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
             </shapes:SSPaint>
         </shapes:RoundRect.Paint>
     </shapes:RoundRect>
+```
+
+### Borderless Entry
+
+```
+	<shapes:SSEntry Text="No Border Entry" />
 ```
 
 ## Contributors

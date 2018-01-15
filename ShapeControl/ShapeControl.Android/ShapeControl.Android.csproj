@@ -128,8 +128,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Renderer\SSEntryRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShapeControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

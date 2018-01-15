@@ -26,7 +26,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 
 ## Usage
 
-Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in only Portable project.
+Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in portable and all platform specific projects..
 
 ### Important
 

@@ -43,7 +43,16 @@ namespace Stormlion.ShapeControl
 
             canvas.Clear();
 
-            canvas.DrawRoundRect(SKRect.Create(0, 0, (float)CanvasView.Width, (float)CanvasView.Height - 2), (float)RadiusX, (float)RadiusY, Paint.FillPaint);
+            canvas.DrawRoundRect(
+                SKRect.Create(
+                    0, 
+                    0,
+                    (float)CanvasView.Width,
+                    (float)CanvasView.Height),
+                (float)RadiusX,
+                (float)RadiusY,
+                Paint.FillPaint
+                );
 
             if (Paint.BorderPaint != null)
             {

@@ -30,6 +30,8 @@ namespace Stormlion.ShapeControl
 
                 return new SKPaint
                 {
+                    IsAntialias = true,
+                    FilterQuality = SKFilterQuality.High,
                     Color = Utils.ColorToSK(BorderColor),
                     Shader = BorderShader,
                     StrokeWidth = BorderWidth,
@@ -45,6 +47,8 @@ namespace Stormlion.ShapeControl
             {
                 return new SKPaint
                 {
+                    IsAntialias = true,
+                    FilterQuality = SKFilterQuality.High,
                     Color = Utils.ColorToSK(FillColor),
                     Shader = FillShader,
                     Style = SKPaintStyle.Fill

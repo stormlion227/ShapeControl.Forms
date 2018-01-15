@@ -16,6 +16,7 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 * Oval
 * RoundedRect
 * Borderless Entry (SSEntry)
+* Borderless Editor (SSEditor)
 * Borderless Picker (SSPicker)
 * Borderless DatePicker (SSDatePicker)
 * Effects by using [SkiaSharp library](https://www.nuget.org/packages/SkiaSharp.Views.Forms).

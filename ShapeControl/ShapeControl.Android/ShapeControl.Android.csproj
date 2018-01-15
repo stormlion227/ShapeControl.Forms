@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Renderer\SSDatePickerRenderer.cs" />
+    <Compile Include="Renderer\SSEditorRenderer.cs" />
     <Compile Include="Renderer\SSEntryRenderer.cs" />
     <Compile Include="Renderer\SSPickerRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

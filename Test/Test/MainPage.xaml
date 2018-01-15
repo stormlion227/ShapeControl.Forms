@@ -235,6 +235,12 @@
                 <shapes:SSDatePicker Grid.Row="4"
                                      Grid.Column="0"
                                      />
+                <shapes:SSEditor Grid.Row="4"
+                                 Grid.Column="1"
+                                 Text="Borderless Editor"
+                                 HeightRequest="150"
+                                 />
+
             </Grid>
         </ScrollView>
     </ContentPage.Content>

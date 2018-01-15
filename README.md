@@ -30,7 +30,7 @@ Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) 
 
 ### Important
 
-You must add these lines to your platform specific projects before Xamain.Forms.Forms.Init() call.
+You must add these lines to your platform specific projects.
 
 #### Android
 
@@ -38,8 +38,6 @@ In MainActivity.cs file
 
 ```
 	ShapeControl.Init(this);
-
-	global::Xamarin.Forms.Forms.Init(this, bundle);
 ```
 
 #### iOS
@@ -48,8 +46,6 @@ In AppDelegate.cs file
 
 ```
 	ShapeControl.Init();
-
-	global::Xamarin.Forms.Forms.Init();
 ```
 
 #### UWP

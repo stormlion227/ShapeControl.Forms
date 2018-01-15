@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ShapeControl.Forms</id>
-    <version>0.1.6</version>
+    <version>0.1.6.1</version>
     <authors>Marko Rothstein</authors>
     <owners>Marko Rothstein</owners>
     <iconUrl>https://raw.githubusercontent.com/stormlion227/ShapeControl.Forms/master/ShapeControl.ico</iconUrl>
@@ -21,9 +21,16 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="ShapeControl/ShapeControl/bin/Release/netstandard2.0/Stromlion.ShapeControl.dll" target="lib/netstandard2.0" />
+    <file src="ShapeControl/ShapeControl/bin/Release/netstandard2.0/Stormlion.ShapeControl.dll" target="lib/netstandard2.0" />
+
+    <file src="ShapeControl/ShapeControl.Android/bin/Release/Stormlion.ShapeControl.dll" target="lib/MonoAndroid403" />
     <file src="ShapeControl/ShapeControl.Android/bin/Release/Stormlion.ShapeControl.Android.dll" target="lib/MonoAndroid403" />
+
+    <file src="ShapeControl/ShapeControl.iOS/bin/Release/Stormlion.ShapeControl.dll" target="lib/Xamarin.iOS10" />
     <file src="ShapeControl/ShapeControl.iOS/bin/Release/Stormlion.ShapeControl.iOS.dll" target="lib/Xamarin.iOS10" />
+
+    <file src="ShapeControl/ShapeControl.UWP/bin/Release/Stormlion.ShapeControl.dll" target="lib/UAP10" />
     <file src="ShapeControl/ShapeControl.UWP/bin/Release/Stormlion.ShapeControl.UWP.dll" target="lib/UAP10" />
+    
   </files>
 </package>

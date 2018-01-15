@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Test"
-             xmlns:shapes="clr-namespace:Stormlion.ShapeControl;assembly=Stromlion.ShapeControl"
+             xmlns:shapes="clr-namespace:Stormlion.ShapeControl;assembly=Stormlion.ShapeControl"
              xmlns:skiaSharp="clr-namespace:SkiaSharp;assembly=SkiaSharp"
              x:Class="Test.MainPage">
     <ContentPage.Content>

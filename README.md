@@ -37,6 +37,7 @@ You must add these lines to your platform specific projects before Xamain.Forms.
 In MainActivity.cs file
 
 '''
+
 	ShapeControl.Init(this);
 
 	global::Xamarin.Forms.Forms.Init(this, bundle);
@@ -47,6 +48,7 @@ In MainActivity.cs file
 In AppDelegate.cs file
 
 '''
+
 	ShapeControl.Init();
 
 	global::Xamarin.Forms.Forms.Init();
@@ -57,11 +59,12 @@ In AppDelegate.cs file
 In App.xaml.cs file
 
 ```
-    List<Assembly> assebliesToInclude = new List<Assembly>();
 
-    assebliesToInclude.Add(typeof(ShapeControl).GetTypeInfo().Assembly);
+	List<Assembly> assebliesToInclude = new List<Assembly>();
 
-    Xamarin.Forms.Forms.Init(e, assebliesToInclude);
+	assebliesToInclude.Add(typeof(ShapeControl).GetTypeInfo().Assembly);
+
+	Xamarin.Forms.Forms.Init(e, assebliesToInclude);
 ```
 
 ### Circle Example
@@ -136,6 +139,7 @@ In App.xaml.cs file
 ### Borderless Entry
 
 ```
+
 	<shapes:SSEntry Text="No Border Entry" />
 ```
 

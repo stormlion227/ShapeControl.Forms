@@ -21,6 +21,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <shapes:Circle Grid.Column="0"
                                Grid.Row="0"
@@ -220,6 +221,20 @@
                                 Grid.Column="0"
                                 Text="No Border Entry"
                                 />
+                <shapes:SSPicker Grid.Row="3"
+                                 Grid.Column="1"
+                                 Title="No Border Picker"
+                                 >
+                    <shapes:SSPicker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
+                        </x:Array>
+                    </shapes:SSPicker.ItemsSource>
+                </shapes:SSPicker>
+                <shapes:SSDatePicker Grid.Row="4"
+                                     Grid.Column="0"
+                                     />
             </Grid>
         </ScrollView>
     </ContentPage.Content>

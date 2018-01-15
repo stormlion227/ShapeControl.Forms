@@ -7,7 +7,6 @@ namespace Stormlion.ShapeControl.Android
     {
         public static void Init(Context context)
         {
-            var ignore1 = new SSEntryRenderer(context);
         }
     }
 }

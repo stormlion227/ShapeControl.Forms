@@ -6,7 +6,6 @@ namespace Stormlion.ShapeControl.UWP
     {
         public static void Init()
         {
-            var ignore1 = new SSEntryRenderer();
         }
     }
 }

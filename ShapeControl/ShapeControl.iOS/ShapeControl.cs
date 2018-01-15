@@ -6,7 +6,6 @@ namespace Stormlion.ShapeControl.iOS
     {
         public static void Init()
         {
-            var ignore1 = new SSEntryRenderer();
         }
     }
 }

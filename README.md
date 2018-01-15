@@ -15,7 +15,9 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 * Circle
 * Oval
 * RoundedRect
-* Borderless Entry (SSEntry). This can be decorated this with other shape controls.
+* Borderless Entry (SSEntry)
+* Borderless Picker (SSPicker)
+* Borderless DatePicker (SSDatePicker)
 * Effects by using [SkiaSharp library](https://www.nuget.org/packages/SkiaSharp.Views.Forms).
 
 ## Support Platforms

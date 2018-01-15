@@ -137,6 +137,14 @@ In App.xaml.cs file
 	<shapes:SSEntry Text="No Border Entry" />
 ```
 
-## Contributors
+## Contributions
+
+Contributions are welcome!
+
+If you find a bug want a feature added please report it to [facebook](https://www.facebook.com/ShapeControlForms-158408391455712/).
+
+If you want to contribute code please file an issue, create a branch, and file a pull request.
+
+### Contributors
 
 * **[Marko Rothstein](https://www.facebook.com/profile.php?id=100014026622428)**

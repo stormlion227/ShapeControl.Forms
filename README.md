@@ -2,11 +2,9 @@
 
 <img src="ScreenShots/IMG_E1117.JPG" width="50%" height="50%" align="right"/>
 
-Xamarin.Forms(.Net Standard) library that allows you to draw shapes such as circle, roundrect, oval and so on.
+Xamarin.Forms plugin to draw shapes such as circle, rounded rectangle, oval and so on.
 
 Supports Android, iOS and Unified Windows Platform (UWP, UAP).
-
-This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaSharp.Views.Forms).
 
 [![NuGet](https://img.shields.io/nuget/v/ShapeControl.Forms.svg)](https://www.nuget.org/packages/ShapeControl.Forms/)
 
@@ -27,34 +25,23 @@ This is based on [SkiaSharp.Views.Forms](https://www.nuget.org/packages/SkiaShar
 * Android
 * Universal Windows Platform (Win10/UWP)
 
-## Usage
-
+## Setup
 Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) in portable and all platform specific projects..
 
-### Important
-
-You must add these lines to your platform specific projects.
-
 #### Android
-
 In MainActivity.cs file
-
 ```
 	ShapeControl.Init(this);
 ```
 
 #### iOS
-
 In AppDelegate.cs file
-
 ```
 	ShapeControl.Init();
 ```
 
 #### UWP
-
 In App.xaml.cs file
-
 ```
 	List<Assembly> assebliesToInclude = new List<Assembly>();
 
@@ -62,6 +49,7 @@ In App.xaml.cs file
 
 	Xamarin.Forms.Forms.Init(e, assebliesToInclude);
 ```
+## Usage
 
 ### Circle Example
 
@@ -139,12 +127,7 @@ In App.xaml.cs file
 ```
 
 ## Contributions
-
 Contributions are welcome!
-
-If you find a bug want a feature added please report it to [facebook](https://www.facebook.com/profile.php?id=100014026622428).
-
-If you want to contribute code please file an issue, create a branch, and file a pull request.
 
 ### Contributors
 

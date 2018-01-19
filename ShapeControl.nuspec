@@ -2,15 +2,15 @@
 <package >
   <metadata>
     <id>ShapeControl.Forms</id>
-    <version>0.1.7.2</version>
+    <version>0.1.8</version>
     <authors>Marko Rothstein</authors>
     <owners>Marko Rothstein</owners>
     <iconUrl>https://raw.githubusercontent.com/stormlion227/ShapeControl.Forms/master/ShapeControl.ico</iconUrl>
     <projectUrl>https://github.com/stormlion227/ShapeControl.Forms</projectUrl>
     <licenseUrl>https://github.com/stormlion227/ShapeControl.Forms/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Xamarin.Forms(.Net Standard) library that allows you make smart UIs with circle, rounded rect, oval and so on.</description>
-    <summary>Supports Android, iOS and Unified Windows Platform (UWP, UAP).</summary>
+    <description>Xamarin.Forms plugin to make smart UIs with shapes such as circle, rounded rect, oval and so on. Support Android, iOS and UWP.</description>
+    <summary>Xamarin.Forms plugin to make smart UIs with shapes such as circle, rounded rect, oval and so on. Support Android, iOS and UWP.</summary>
     <releaseNotes>First release.</releaseNotes>
     <copyright>© StormLion 2018</copyright>
     <tags>xamarin forms shape circle roundrect oval gradient border border-radius effects border-color corner-radius borderless entry picker datepicker</tags>

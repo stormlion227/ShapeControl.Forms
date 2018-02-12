@@ -6,7 +6,6 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Stormlion.ShapeControl.Android;
 
 namespace Test.Droid
 {
@@ -20,7 +19,7 @@ namespace Test.Droid
 
             base.OnCreate(bundle);
 
-            ShapeControl.Init(this);
+            Stormlion.ShapeControl.Droid.Platform.Init(this);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());

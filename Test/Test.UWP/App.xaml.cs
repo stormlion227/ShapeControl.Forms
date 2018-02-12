@@ -1,5 +1,4 @@
-﻿using Stormlion.ShapeControl.UWP;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -56,7 +55,7 @@ namespace Test.UWP
 
                 List<Assembly> assebliesToInclude = new List<Assembly>();
 
-                assebliesToInclude.Add(typeof(ShapeControl).GetTypeInfo().Assembly);
+                assebliesToInclude.Add(typeof(Stormlion.ShapeControl.UWP.Platform).GetTypeInfo().Assembly);
 
                 Xamarin.Forms.Forms.Init(e, assebliesToInclude);
 

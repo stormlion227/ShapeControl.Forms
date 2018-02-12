@@ -31,13 +31,13 @@ Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) 
 #### Android
 In MainActivity.cs file
 ```
-	ShapeControl.Init(this);
+	Stormlion.ShapeControl.Droid.Platform.Init(this);
 ```
 
 #### iOS
 In AppDelegate.cs file
 ```
-	ShapeControl.Init();
+	Stormlion.ShapeControl.iOS.Platform.Init();
 ```
 
 #### UWP
@@ -45,7 +45,7 @@ In App.xaml.cs file
 ```
 	List<Assembly> assebliesToInclude = new List<Assembly>();
 
-	assebliesToInclude.Add(typeof(ShapeControl).GetTypeInfo().Assembly);
+	assebliesToInclude.Add(typeof(Stormlion.ShapeControl.UWP.Platform).GetTypeInfo().Assembly);
 
 	Xamarin.Forms.Forms.Init(e, assebliesToInclude);
 ```

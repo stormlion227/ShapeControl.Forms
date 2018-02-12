@@ -1,11 +1,14 @@
-﻿using Stormlion.ShapeControl.iOS.Renderer;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Stormlion.ShapeControl.iOS
 {
-    public class ShapeControl
+    public class Platform
     {
         public static void Init()
         {
+
         }
     }
 }

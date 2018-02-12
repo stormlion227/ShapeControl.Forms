@@ -1,11 +1,11 @@
 ﻿using Android.Content;
 using Stormlion.ShapeControl;
-using Stormlion.ShapeControl.Android.Renderer;
+using Stormlion.ShapeControl.Droid.Renderer;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportRenderer(typeof(SSPicker), typeof(SSPickerRenderer))]
-namespace Stormlion.ShapeControl.Android.Renderer
+namespace Stormlion.ShapeControl.Droid.Renderer
 {
     public class SSPickerRenderer : PickerRenderer
     {

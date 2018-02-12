@@ -10,12 +10,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Stormlion.ShapeControl;
-using Stormlion.ShapeControl.Android.Renderer;
+using Stormlion.ShapeControl.Droid.Renderer;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportRenderer(typeof(SSEntry), typeof(SSEntryRenderer))]
-namespace Stormlion.ShapeControl.Android.Renderer
+namespace Stormlion.ShapeControl.Droid.Renderer
 {
     public class SSEntryRenderer : EntryRenderer
     {

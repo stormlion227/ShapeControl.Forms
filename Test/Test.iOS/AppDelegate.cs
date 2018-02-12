@@ -1,6 +1,4 @@
 ﻿using Foundation;
-using Stormlion.ShapeControl.iOS;
-using Stormlion.ShapeControl.iOS.Renderer;
 using UIKit;
 
 namespace Test.iOS
@@ -20,7 +18,7 @@ namespace Test.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            ShapeControl.Init();
+            Stormlion.ShapeControl.iOS.Platform.Init();
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

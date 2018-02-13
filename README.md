@@ -30,19 +30,19 @@ Install the [nuget package](https://www.nuget.org/packages/ShapeControl.Forms/) 
 
 #### Android
 In MainActivity.cs file
-```
+```cs
 	Stormlion.ShapeControl.Droid.Platform.Init(this);
 ```
 
 #### iOS
 In AppDelegate.cs file
-```
+```cs
 	Stormlion.ShapeControl.iOS.Platform.Init();
 ```
 
 #### UWP
 In App.xaml.cs file
-```
+```cs
 	List<Assembly> assebliesToInclude = new List<Assembly>();
 
 	assebliesToInclude.Add(typeof(Stormlion.ShapeControl.UWP.Platform).GetTypeInfo().Assembly);
@@ -53,7 +53,7 @@ In App.xaml.cs file
 
 ### Circle Example
 
-```
+```xaml
     <shapes:Circle>
         <shapes:Circle.Paint>
             <shapes:SSPaint BorderWidth="1" 
@@ -66,7 +66,7 @@ In App.xaml.cs file
 
 ### Oval with Blue Solid Color
 
-```
+```xaml
     <shapes:Oval>
         <shapes:Oval.Paint>
             <shapes:SSPaint FillColor="Blue"
@@ -77,7 +77,7 @@ In App.xaml.cs file
 
 ### RoundRect with Gridient Color
 
-```
+```xaml
     <shapes:RoundRect RadiusX="30"
                       RadiusY="30"
                       >
@@ -122,7 +122,7 @@ In App.xaml.cs file
 
 ### Borderless Entry
 
-```
+```xaml
 	<shapes:SSEntry Text="No Border Entry" />
 ```
 

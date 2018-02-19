@@ -1,6 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Picker xmlns="http://xamarin.com/schemas/2014/forms" 
-        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-        x:Class="Stormlion.ShapeControl.SSPicker"
-        >
-</Picker>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Picker x:Class="Stormlion.ShapeControl.SSPicker"
+        xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" />

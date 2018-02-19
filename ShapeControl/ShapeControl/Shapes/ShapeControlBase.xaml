@@ -1,16 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView x:Class="Stormlion.ShapeControl.ShapeControlBase"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Stormlion.ShapeControl.ShapeControlBase"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-             BackgroundColor="Transparent"
-             >
+             BackgroundColor="Transparent">
     <ContentView.Content>
-        <skia:SKCanvasView PaintSurface="OnCanvasViewPaintSurface"
+        <skia:SKCanvasView x:Name="canvasView"
                            HorizontalOptions="FillAndExpand"
-                           VerticalOptions="FillAndExpand"
-                           x:Name="canvasView"
-                           >
-        </skia:SKCanvasView>
+                           PaintSurface="OnCanvasViewPaintSurface"
+                           VerticalOptions="FillAndExpand" />
     </ContentView.Content>
 </ContentView>

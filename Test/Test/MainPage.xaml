@@ -1,17 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Class="Test.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Test"
              xmlns:shapes="clr-namespace:Stormlion.ShapeControl;assembly=Stormlion.ShapeControl"
-             xmlns:skiaSharp="clr-namespace:SkiaSharp;assembly=SkiaSharp"
-             x:Class="Test.MainPage">
+             xmlns:skiaSharp="clr-namespace:SkiaSharp;assembly=SkiaSharp">
     <ContentPage.Content>
-        <ScrollView HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand"
-                    >
-            <Grid HorizontalOptions="FillAndExpand"
-                  Margin="20, 20, 20, 20"
-                  >
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid Margin="20,20,20,20" HorizontalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
@@ -23,39 +19,31 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <shapes:Circle Grid.Column="0"
-                               Grid.Row="0"
-                               HeightRequest="200"
-                               >
+                <shapes:Circle Grid.Row="0"
+                               Grid.Column="0"
+                               HeightRequest="200">
                     <shapes:Circle.Paint>
-                        <shapes:SSPaint BorderWidth="1" 
-                                        BorderColor="Red"
-                                        FillColor="Yellow"
-                                        />
+                        <shapes:SSPaint BorderColor="Red"
+                                        BorderWidth="1"
+                                        FillColor="Yellow" />
                     </shapes:Circle.Paint>
                 </shapes:Circle>
-                <shapes:Oval Grid.Column="1"
-                             Grid.Row="0"
-                             HeightRequest="200"
-                             >
+                <shapes:Oval Grid.Row="0"
+                             Grid.Column="1"
+                             HeightRequest="200">
                     <shapes:Oval.Paint>
-                        <shapes:SSPaint FillColor="Blue"
-                                        />
+                        <shapes:SSPaint FillColor="Blue" />
                     </shapes:Oval.Paint>
                 </shapes:Oval>
-                <shapes:RoundRect Grid.Column="0"
-                                  Grid.Row="1"
+                <shapes:RoundRect Grid.Row="1"
+                                  Grid.Column="0"
                                   HeightRequest="150"
                                   RadiusX="30"
-                                  RadiusY="30"
-                                  >
+                                  RadiusY="30">
                     <shapes:RoundRect.Paint>
-                        <shapes:SSPaint BorderWidth="10"
-                                        FillColor="Transparent"
-                                        >
+                        <shapes:SSPaint BorderWidth="10" FillColor="Transparent">
                             <shapes:SSPaint.BorderShader>
-                                <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
-                                                    >
+                                <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient">
                                     <x:Arguments>
                                         <skiaSharp:SKPoint>
                                             <x:Arguments>
@@ -81,22 +69,18 @@
                                             Clamp
                                         </skiaSharp:SKShaderTileMode>
                                     </x:Arguments>
-                                </skiaSharp:SKShader>                                
+                                </skiaSharp:SKShader>
                             </shapes:SSPaint.BorderShader>
                         </shapes:SSPaint>
                     </shapes:RoundRect.Paint>
                 </shapes:RoundRect>
-                <shapes:Oval Grid.Column="1"
-                             Grid.Row="1"
-                             HeightRequest="150"
-                             >
+                <shapes:Oval Grid.Row="1"
+                             Grid.Column="1"
+                             HeightRequest="150">
                     <shapes:Oval.Paint>
-                        <shapes:SSPaint BorderWidth="10"
-                                        FillColor="Transparent"
-                                        >
+                        <shapes:SSPaint BorderWidth="10" FillColor="Transparent">
                             <shapes:SSPaint.PathEffect>
-                                <skiaSharp:SKPathEffect x:FactoryMethod="CreateDash"
-                                                        >
+                                <skiaSharp:SKPathEffect x:FactoryMethod="CreateDash">
                                     <x:Arguments>
                                         <x:Array Type="{x:Type x:Single}">
                                             <x:Single>20</x:Single>
@@ -107,8 +91,7 @@
                                 </skiaSharp:SKPathEffect>
                             </shapes:SSPaint.PathEffect>
                             <shapes:SSPaint.BorderShader>
-                                <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
-                                                    >
+                                <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient">
                                     <x:Arguments>
                                         <skiaSharp:SKPoint>
                                             <x:Arguments>
@@ -139,20 +122,16 @@
                         </shapes:SSPaint>
                     </shapes:Oval.Paint>
                 </shapes:Oval>
-                <shapes:RoundRect Grid.Column="0"
-                                  Grid.Row="2"
+                <shapes:RoundRect Grid.Row="2"
+                                  Grid.Column="0"
                                   Grid.ColumnSpan="2"
                                   HeightRequest="200"
                                   RadiusX="0"
-                                  RadiusY="0"
-                                  >
+                                  RadiusY="0">
                     <shapes:RoundRect.Paint>
-                        <shapes:SSPaint BorderWidth="1"
-                                        BorderColor="Black"
-                                        >
+                        <shapes:SSPaint BorderColor="Black" BorderWidth="1">
                             <shapes:SSPaint.FillShader>
-                                <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient"
-                                                    >
+                                <skiaSharp:SKShader x:FactoryMethod="CreateLinearGradient">
                                     <x:Arguments>
                                         <skiaSharp:SKPoint>
                                             <x:Arguments>
@@ -187,44 +166,39 @@
                         </shapes:SSPaint>
                     </shapes:RoundRect.Paint>
                 </shapes:RoundRect>
-                <shapes:RoundRect Grid.Column="0"
-                                  Grid.Row="2"
+                <shapes:RoundRect Grid.Row="2"
+                                  Grid.Column="0"
                                   Grid.ColumnSpan="2"
                                   HeightRequest="50"
-                                  WidthRequest="200"
+                                  HorizontalOptions="Center"
                                   RadiusX="25"
                                   RadiusY="25"
-                                  HorizontalOptions="Center"
                                   VerticalOptions="Center"
-                                  >
+                                  WidthRequest="200">
                     <shapes:RoundRect.Paint>
-                        <shapes:SSPaint BorderWidth="2"
-                                        BorderColor="White"
-                                        FillColor="#7F000000"
-                                        />
+                        <shapes:SSPaint BorderColor="White"
+                                        BorderWidth="2"
+                                        FillColor="#7F000000" />
                     </shapes:RoundRect.Paint>
                 </shapes:RoundRect>
-                <Label Grid.Column="0"
-                       Grid.Row="2"
+                <Label Grid.Row="2"
+                       Grid.Column="0"
                        Grid.ColumnSpan="2"
+                       FontSize="Large"
                        HeightRequest="50"
-                       WidthRequest="200"
                        HorizontalOptions="Center"
-                       VerticalOptions="Center"
                        HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
                        Text="Sample Button"
                        TextColor="White"
-                       FontSize="Large"
-                       />
+                       VerticalOptions="Center"
+                       VerticalTextAlignment="Center"
+                       WidthRequest="200" />
                 <shapes:SSEntry Grid.Row="3"
                                 Grid.Column="0"
-                                Text="No Border Entry"
-                                />
-                <shapes:SSPicker Grid.Row="3"
-                                 Grid.Column="1"
-                                 Title="No Border Picker"
-                                 >
+                                Text="No Border Entry" />
+                <shapes:SSPicker Title="No Border Picker"
+                                 Grid.Row="3"
+                                 Grid.Column="1">
                     <shapes:SSPicker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Male</x:String>
@@ -232,14 +206,11 @@
                         </x:Array>
                     </shapes:SSPicker.ItemsSource>
                 </shapes:SSPicker>
-                <shapes:SSDatePicker Grid.Row="4"
-                                     Grid.Column="0"
-                                     />
+                <shapes:SSDatePicker Grid.Row="4" Grid.Column="0" />
                 <shapes:SSEditor Grid.Row="4"
                                  Grid.Column="1"
-                                 Text="Borderless Editor"
                                  HeightRequest="150"
-                                 />
+                                 Text="Borderless Editor" />
 
             </Grid>
         </ScrollView>
